@@ -1,0 +1,8 @@
+**/*
+!*.txt
+!*.h
+!*.c
+!day*/
+!.gitignore
+!Makefile
+!README.md
