@@ -1,5 +1,5 @@
 cflags=-Wall -Wextra
-day=4
+day=5
 
 .PHONY: build solve.o
 all: build

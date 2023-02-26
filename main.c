@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include"solve.h"
 
+// comments
+
 int read_input(char *filepath, int size, char fc[size][size])
 {
 	FILE *f = fopen(filepath, "r");
@@ -32,14 +34,11 @@ int main(int argn, char **argv)
 		return 1;
 	}
 
-	int size = 1000;
+	size_t size = 1000;
 	char fc[size][size];
 
 	cleanup(size, fc);
 	read_input(argv[1], size, fc);
-	// int i;
-	// for (i = 0; i < size && fc[i][0] != '\0'; i++)
-	// 	printf("line %d: %s", i, fc[i]);
 
 	solve(size, fc);
 	return 0;
